@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 
 :root{
     --container-width-lg:88%;
@@ -291,4 +292,83 @@ header{
 .contact__btn:hover i{
     transform: rotate(-15deg);
     color: #09ff00;
+}
+
+/*===========----- About section -----===================*/
+#about{
+    margin-top: 18rem;
+}
+
+.about__container{
+    display: grid;
+    grid-template-columns: 10rem 26rem auto;
+    gap: 3rem;
+    position: relative;
+}
+
+.about__title{
+    position: absolute;
+    top: -8rem;
+    z-index: 1;
+}
+
+#about h2{
+    font-family: 'Pattaya', sans-serif;
+}
+
+.about__btn{
+    background: linear-gradient(90deg, rgba(225,255,0,1) 0%, rgba(255,196,0,1) 62%, rgba(224,158,0,1) 100%);
+    align-self: flex-end;
+}
+.about__btn:hover{
+    transform: translateY(-1rem);
+}
+
+.about__image{
+position: relative;    
+}
+
+.about__image-bg{
+    width: 16rem;
+    height: 24rem;
+    position: absolute;
+    top: 0;
+    background: #2B7A78;
+}
+
+.about__image-lg{
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    filter: saturate(0) brightness(0.3);
+    transition: var(--transitions);
+}
+
+.about__image-sm{
+    position: absolute;
+    top: 3rem;
+    left: 8rem;
+    height: 20rem;
+    width: 20rem;
+    overflow: hidden;
+    box-sizing: 2rem 2rem 2rem rgba(255,255,255,0.4);
+    transition: var(--transitions);
+}
+
+.about__image:hover .about__image-sm{
+    opacity: 0;
+}
+.about__image:hover .about__image-lg{
+    filter: saturate(1) brightness(1);
+    border: .5rem solid #3AAFA9;
+    top: 0;
+    left: 0;
+}
+
+.about__right{
+    margin-left: 5rem;
+}
+
+.about__right p{
+    margin: 0 4rem 1.5rem 0;
 }
