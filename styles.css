@@ -761,18 +761,29 @@ footer{
     /*---===== About =====---*/
     .about__container{
         grid-template-columns: 1fr;
-        gap: 2rem;
     }
 
     .about__right p {
         width: 100%;
-        text-align: center;
     }
 
     .swiper-slide{
         border: 0;
     }
 
+    .about__btn{
+        display: none;
+    }
+
+    .about__image-lg{
+        top: 0;
+        left: 0;
+    }
+    
+    .about__right{
+        margin-left: 1rem;
+    }
+    
 
     /*---===== Gallery =====---*/
     #gallery{
@@ -787,6 +798,10 @@ footer{
         margin-top: 3rem;
     }
 
+    .gallery__container p{
+        width: 100%;
+    }
+
 
     /*---===== Exhibitions =====---*/
     #exhibitions{
@@ -799,6 +814,7 @@ footer{
 
     .exhibitions__head > p{
         margin-top: 1rem;
+        width: 100%;
     }
 
     .exhibitions__gallery{
