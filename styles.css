@@ -18,8 +18,10 @@
     box-sizing: border-box;
 }
 
-html{
+html, body{
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body{
